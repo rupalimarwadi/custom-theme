@@ -5,6 +5,11 @@ $app-primary: mat-palette($mat-blue,600);
 $app-accent: mat-palette($mat-yellow,700);
 $app-warn: mat-palette($mat-red);
 
+// $app-theme:mat-light-theme($app-primary,$app-accent,$app-warn); For Light theme
+$app-theme:mat-dark-theme($app-primary,$app-accent,$app-warn); //For Dark theme
+
+@include angular-material-theme($app-theme);
+
 $color:blue;
 h1{
     color:$color;
