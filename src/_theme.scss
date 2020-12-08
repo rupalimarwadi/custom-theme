@@ -1,0 +1,21 @@
+@import "~@angular/material/_theming.scss";
+@include  mat-core();
+
+$app-primary: mat-palette($mat-blue,600);
+$app-accent: mat-palette($mat-yellow,700);
+$app-warn: mat-palette($mat-red);
+
+$color:blue;
+h1{
+    color:$color;
+}
+h2{
+    color:green;
+}
+@mixin smooth-box($padding) {
+    border-radius: 10px;
+    padding: $padding;
+}
+.box{
+    @include smooth-box(5px);
+}
